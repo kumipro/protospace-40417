@@ -57,8 +57,9 @@ private
   end
 
 def move_to_index
+  unless current_user == @prototype.user
         redirect_to root_path
-      unless current_user == @prototype.user
+      
       end
     end
   # def authenticate_user!
